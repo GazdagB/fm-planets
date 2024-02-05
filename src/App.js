@@ -1,14 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Mercury from "./pages/Mercury";
-import Venus from "./pages/Venus";
-import Earth from "./pages/Earth";
 import Header from "./components/Header";
-import Mars from "./pages/Mars";
-import Jupiter from "./pages/Jupiter";
-import Saturn from "./pages/Saturn";
-import Uranus from "./pages/Uranus";
-import Neptune from "./pages/Neptune";
+import PlanetPage from "./components/PlanetPage";
 
 function App() {
   return (
@@ -16,14 +9,14 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Mercury />} />
-          <Route path="/venus" element={<Venus />} />
-          <Route path="/earth" element={<Earth />} />
-          <Route path="/mars" element={<Mars />} />
-          <Route path="/jupiter" element={<Jupiter />} />
-          <Route path="/saturn" element={<Saturn />} />
-          <Route path="/uranus" element={<Uranus />} />
-          <Route path="/neptune" element={<Neptune />} />
+          <Route path="/" element={<PlanetPage planetNumber={0}/>} />
+          <Route path="/venus" element={<PlanetPage planetNumber={1}/>}></Route>
+          <Route path="/earth" element={<PlanetPage planetNumber={2}/>} />
+          <Route path="/mars" element={<PlanetPage planetNumber={3}/>} />
+          <Route path="/jupiter" element={<PlanetPage planetNumber={4}/>} />
+          <Route path="/saturn" element={<PlanetPage planetNumber={5}/>} />
+          <Route path="/uranus" element={<PlanetPage planetNumber={6}/>} />
+          <Route path="/neptune" element={<PlanetPage planetNumber={7}/>} />
         </Routes>
       </Router>
     </div>
