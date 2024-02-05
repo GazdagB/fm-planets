@@ -3,6 +3,7 @@ import data from "../data.json";
 import Button from "./Button";
 import DataCard from "./DataCard";
 import "./PlanetPage.css";
+import './Responsive.css'
 
 const PlanetPage = ({ planetNumber }) => {
 
@@ -15,51 +16,55 @@ const PlanetPage = ({ planetNumber }) => {
     return (
         <main className="mercury page-container wrapper">
             <div className="hero">
-                <img className="img-mercury" src={active === "OVERVIEW" ? planet.images.planet
-                : active === "INTERNAL STRUCTURE" ? planet.images.internal
-                : active === "SURFACE GEOLOGY" ? planet.images.geology
-                : null} alt="" />
+               
+                    <img className="img-mercury" src={active === "OVERVIEW" ? planet.images.planet
+                    : active === "INTERNAL STRUCTURE" ? planet.images.internal
+                    : active === "SURFACE GEOLOGY" ? planet.images.geology
+                    : null} alt="" />
+              
                 <div className="info-container">
-                    <h1>{planet.name}</h1>
-                    <p className="content">
-                        {active === "OVERVIEW"
-                            ? planet.overview.content
-                            : active === "INTERNAL STRUCTURE"
-                            ? planet.structure.content
-                            : active === "SURFACE GEOLOGY"
-                            ? planet.geology.content
-                            : null}
-                    </p>
-                    <p>
-                        Source:{" "}
-                        {active === "OVERVIEW" && planet.overview.source && (
-                            <a
-                                href={planet.overview.source}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Wikipedia
-                            </a>
-                        )}
-                        {active === "INTERNAL STRUCTURE" && planet.structure.source && (
-                            <a
-                                href={planet.structure.source}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Wikipedia
-                            </a>
-                        )}
-                        {active === "SURFACE GEOLOGY" && planet.geology.source && (
-                            <a
-                                href={planet.geology.source}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Wikipedia
-                            </a>
-                        )}
-                    </p>
+                    <div className="text-container">
+                        <h1>{planet.name}</h1>
+                        <p className="content">
+                            {active === "OVERVIEW"
+                                ? planet.overview.content
+                                : active === "INTERNAL STRUCTURE"
+                                ? planet.structure.content
+                                : active === "SURFACE GEOLOGY"
+                                ? planet.geology.content
+                                : null}
+                        </p>
+                        <p>
+                            Source:{" "}
+                            {active === "OVERVIEW" && planet.overview.source && (
+                                <a
+                                    href={planet.overview.source}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Wikipedia
+                                </a>
+                            )}
+                            {active === "INTERNAL STRUCTURE" && planet.structure.source && (
+                                <a
+                                    href={planet.structure.source}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Wikipedia
+                                </a>
+                            )}
+                            {active === "SURFACE GEOLOGY" && planet.geology.source && (
+                                <a
+                                    href={planet.geology.source}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Wikipedia
+                                </a>
+                            )}
+                        </p>
+                    </div>
                     <div className="buttons">
                         <Button
                             number={1}
