@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Online Site
+## LIVE Site
 [https://fm-planets.netlify.app/](https://fm-planets.netlify.app/)
 ## Available Scripts
 
