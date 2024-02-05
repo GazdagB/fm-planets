@@ -4,8 +4,8 @@ import data from '../data.json';
 import DataCard from '../components/DataCard';
 import Button from '../components/Button';
 
-const Venus = () => {
-  let planet = data[1];
+const Mars = () => {
+  let planet = data[3];
   return (
     <main className='mercury page-container wrapper'>
                 <div className="hero">
@@ -31,4 +31,4 @@ const Venus = () => {
   )
 }
 
-export default Venus
+export default Mars

@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 
 export default function Header() {
     return (
-        <div>
+        <nav className="navbar flex">
         <div className="logo">THE PLANETS</div>
-        <Link to="/">mercury</Link>
-        <Link to="/venus">venus</Link>
-        <Link to="/earth">earth</Link>
-        <Link to="/mars">mars</Link>
-        <Link to="/jupiter">jupiter</Link>
-        <Link to="/saturn">saturn</Link>
-        <Link to="/uranus">uranus</Link>
-        <Link to="/neptune">neptune</Link>
+        
+        <div className="menu">
+            <Link className="li" to="/">mercury</Link>
+            <Link className="li" to="/venus">venus</Link>
+            <Link className="li" to="/earth">earth</Link>
+            <Link className="li" to="/mars">mars</Link>
+            <Link className="li" to="/jupiter">jupiter</Link>
+            <Link className="li" to="/saturn">saturn</Link>
+            <Link className="li" to="/uranus">uranus</Link>
+            <Link className="li" to="/neptune">neptune</Link>
         </div>
+        </nav>
     );
 };

@@ -4,15 +4,15 @@ import data from '../data.json';
 import DataCard from '../components/DataCard';
 import Button from '../components/Button';
 
-const Venus = () => {
-  let planet = data[1];
+const Neptune = () => {
+  let planet = data[7];
   return (
     <main className='mercury page-container wrapper'>
                 <div className="hero">
                     <img className='img-mercury' src={planet.images.planet} alt="" />
                     <div className="info-container">
                         <h1>{planet.name}</h1>
-                        <p className='content'>{planet.overview.content}</p>
+                        <p>{planet.overview.content}</p>
                         <p>Source: <a href={planet.overview.source} target='_blank' rel="noreferrer">Wikipedia</a></p>
                         <div className="buttons">
                             <Button number={1} text={"OVERVIEW"} />
@@ -31,4 +31,4 @@ const Venus = () => {
   )
 }
 
-export default Venus
+export default Neptune

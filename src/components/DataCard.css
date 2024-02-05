@@ -1,0 +1,13 @@
+.data-card{
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 20px;
+}
+
+.data-card h4{
+    text-transform: uppercase;
+    color: #838391;
+}

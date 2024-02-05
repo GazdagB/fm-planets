@@ -1,5 +1,26 @@
 .App {
   text-align: center;
+  height: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+#root {
+  height: 100%;
+  --bg-color: #070724;
+}
+
+body{
+  height: 100%;
+  background: #070724;
+  background-image: url(./assets/background-stars.svg);
+  background-size: contain;
 }
 
 .App-logo {
@@ -7,4 +28,68 @@
   pointer-events: none;
 }
 
+.page-container{
+  height: 100%;
+}
 
+.flex{
+  display: flex;
+}
+
+.wrapper{
+   max-width: 1400px;
+    margin: 0 auto;
+}
+
+p{
+  font-size: 16px;
+  line-height: 25px;
+}
+
+h1{
+  font-size: 80px ;
+  line-height: 103px;
+}
+
+h2{
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1.5px; 
+}
+
+h3{
+  font-size: 12px;
+  letter-spacing: 2.6px;
+  line-height: 25px;
+}
+
+h4{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+h1,h2{
+  font-family: 'Antonio', sans-serif;
+  font-weight: 500;
+
+}
+
+h3,h4{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bold;
+}
+
+.btn{
+  width: 350px;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.btn-toggle-info{
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 11px 2rem;
+}
