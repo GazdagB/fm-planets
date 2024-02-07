@@ -2,7 +2,6 @@
 @media only screen and (max-width: 1500px){
     .wrapper{
         max-width: 1200px;
-        width: 90%;
     }
 }
 
@@ -13,3 +12,111 @@
 }
 
 
+/* IPAD PRO AND SMALLER */
+@media only screen and (max-width: 1024px){
+    .page-container{
+        height: fit-content;
+        padding-top: 200px;
+        gap: 0;
+    }
+
+    .data-container{
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .navbar{
+        flex-direction: column;
+        padding: 40px 50px 27px 50px;
+    }
+
+    .logo{
+        margin-bottom: 40px;
+    }
+
+    .img-mercury{
+        transform: scale(0.63);
+        justify-self: flex-start;
+    }
+
+    .hero{
+        max-height: none;
+        flex-direction: column;
+        height: 85%;
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    .info-container{
+        flex-direction: row;
+        width: 100%;
+        gap: 70px;
+        height: 350px;
+        justify-content: space-between;
+    }
+
+    .content{
+        margin-bottom: 20px;
+        height: initial;
+    }
+
+    .text-container{
+        max-width: 500px;
+    }
+
+    .text-container h1{
+        margin-bottom: 24px;
+    }
+
+    .img-container{
+        height: 40svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ======== TYPOGRAPHY ========= */
+
+    .text-container p{
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .text-container h1{
+        font-size: 48px;
+    }
+
+    .data-card h4{
+        font-size: 8px;
+        line-height: 16px;
+       
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 44px;
+    }
+    
+    .data-card{
+        padding: 13px 16px;
+    }
+
+    .btn{
+        width: 281px;
+    }
+
+    h3{
+        font-size: 9px;
+    }
+
+    .li{
+        font-size: 13px;
+    }
+    
+}
+
+
+@media only screen and (max-height: 1100px){
+    .info-container{
+        height: fit-content;
+    }
+}

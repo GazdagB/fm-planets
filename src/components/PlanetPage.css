@@ -63,3 +63,7 @@ img{
 .active{
     background-color: red;
 }
+
+.img-container{
+    margin: 0 auto;
+}

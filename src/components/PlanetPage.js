@@ -16,12 +16,12 @@ const PlanetPage = ({ planetNumber }) => {
     return (
         <main className="mercury page-container wrapper">
             <div className="hero">
-               
-                    <img className="img-mercury" src={active === "OVERVIEW" ? planet.images.planet
-                    : active === "INTERNAL STRUCTURE" ? planet.images.internal
-                    : active === "SURFACE GEOLOGY" ? planet.images.geology
-                    : null} alt="" />
-              
+                    <div className="img-container">
+                        <img className="img-mercury" src={active === "OVERVIEW" ? planet.images.planet
+                        : active === "INTERNAL STRUCTURE" ? planet.images.internal
+                        : active === "SURFACE GEOLOGY" ? planet.images.geology
+                        : null} alt="" />
+                    </div>
                 <div className="info-container">
                     <div className="text-container">
                         <h1>{planet.name}</h1>
