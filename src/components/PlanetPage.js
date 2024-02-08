@@ -1,24 +1,30 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import data from "../data.json";
 import Button from "./Button";
 import DataCard from "./DataCard";
 import "./PlanetPage.css";
 import './Responsive.css'
 
-const PlanetPage = ({ planetNumber }) => {
+const PlanetPage = ({ planetNumber, mobileIsOpen }) => {
 
     useEffect(()=>{
         setActive("OVERVIEW");
     },[planetNumber])
 
     const [active, setActive] = useState("OVERVIEW");
+    
+
     let planet = data[planetNumber];
     return (
+        <>
+        {!mobileIsOpen && 
+        
         <main className="mercury page-container wrapper">
-            <div className="mobile-buttons">
-                <p>OVERVIEW</p>
-                <p>STRUCTURE</p>
-                <p>SURFACE</p>
+            <div  className="mobile-buttons">
+                <p onClick={()=>{setActive("OVERVIEW")}} >OVERVIEW</p>
+                <p onClick={()=>{setActive("INTERNAL STRUCTURE")}} >STRUCTURE</p>
+                <p onClick={()=>{setActive("SURFACE GEOLOGY")}}>SURFACE</p>
             </div>
             <div className="hero">
                     <div className="img-container">
@@ -108,6 +114,21 @@ const PlanetPage = ({ planetNumber }) => {
                 <DataCard title="average temp." data={planet.temperature} />
             </div>
         </main>
+        }
+
+        
+
+        { mobileIsOpen && <div className="mobile-menu">
+            <Link className="li" to="/">mercury</Link>
+            <Link className="li" to="/venus">venus</Link>
+            <Link className="li" to="/earth">earth</Link>
+            <Link className="li" to="/mars">mars</Link>
+            <Link className="li" to="/jupiter">jupiter</Link>
+            <Link className="li" to="/saturn">saturn</Link>
+            <Link className="li" to="/uranus">uranus</Link>
+            <Link className="li" to="/neptune">neptune</Link>
+        </div>}
+        </>
     );
 };
 

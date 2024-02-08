@@ -3,12 +3,20 @@ import "./Header.css";
 
 
 
-export default function Header() {
+
+export default function Header({setMobileIsOpen,mobileIsOpen}) {
+
+    function handleMobileToggle(){
+        setMobileIsOpen((prev)=>!prev);
+        console.log(mobileIsOpen);
+        
+    }
+
     return (
         <nav className="navbar flex">
         <div className="logo">THE PLANETS</div>
         
-        <div className="navbar-toggler">
+        <div onClick={handleMobileToggle}  className="navbar-toggler">
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
@@ -24,9 +32,7 @@ export default function Header() {
             <Link className="li" to="/neptune">neptune</Link>
         </div>
 
-        <div className="mobile-menu">
-
-        </div>
+         
         </nav>
     );
 };
