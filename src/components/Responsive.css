@@ -150,5 +150,52 @@
         margin: 0;
     }
 
+    .buttons{
+        display: none;
+    }
+
+    .data-container{
+        grid-template-columns: 1fr;
+    }
+
+    .img-mercury{
+        transform: scale(0.40);
+        max-height: fit-content;
+    }
+
+    .img-container{
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .data-card{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+
+    .data-container{
+        gap: 8px;
+    }
+
+    .page-container{
+        padding-top: 180px;
+    }
+
+    .text-container h1{
+        font-size: 40px;
+        margin-bottom: 16px;
+        line-height: normal;
+    }
+
+    .text-container{
+        text-align: center;
+    }
+
+    .info-container p{
+        text-align: center;
+    }
+
     
 }
