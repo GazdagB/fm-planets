@@ -67,3 +67,15 @@ img{
 .img-container{
     margin: 0 auto;
 }
+
+.mobile-buttons{
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    height: 50px;
+    display: none;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+}

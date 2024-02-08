@@ -144,6 +144,7 @@
     .navbar{
         flex-direction: row;
         align-items: center;
+        padding: 20px 25px 20px 25px;
     }
 
     .logo{
@@ -159,7 +160,7 @@
     }
 
     .img-mercury{
-        transform: scale(0.40);
+        transform: scale(0.38);
         max-height: fit-content;
     }
 
@@ -180,7 +181,7 @@
     }
 
     .page-container{
-        padding-top: 180px;
+        padding-top: 140px;
     }
 
     .text-container h1{
@@ -197,5 +198,8 @@
         text-align: center;
     }
 
+    .mobile-buttons{
+        display: flex;
+    }
     
 }

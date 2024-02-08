@@ -15,6 +15,11 @@ const PlanetPage = ({ planetNumber }) => {
     let planet = data[planetNumber];
     return (
         <main className="mercury page-container wrapper">
+            <div className="mobile-buttons">
+                <p>OVERVIEW</p>
+                <p>STRUCTURE</p>
+                <p>SURFACE</p>
+            </div>
             <div className="hero">
                     <div className="img-container">
                         <img className="img-mercury" src={active === "OVERVIEW" ? planet.images.planet
