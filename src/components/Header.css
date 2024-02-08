@@ -9,6 +9,20 @@
     border-bottom: 1px solid #979797 ;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
+.line{
+    height: 3px;
+    width: 24px;
+    background-color: #fff;
+}
+
+.line:not(:last-child){
+    margin-bottom: 4px;
+}
+
 .li{
     color: #fff;
     text-transform: uppercase;
@@ -30,4 +44,8 @@
     color: #fff;
     font-family: 'Antonio', sans-serif;
     letter-spacing: -1.05px;
+}
+
+.mobile-menu{
+    display: none;
 }

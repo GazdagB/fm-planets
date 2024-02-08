@@ -8,6 +8,11 @@ export default function Header() {
         <nav className="navbar flex">
         <div className="logo">THE PLANETS</div>
         
+        <div className="navbar-toggler">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
         <div className="menu">
             <Link className="li" to="/">mercury</Link>
             <Link className="li" to="/venus">venus</Link>
@@ -17,6 +22,10 @@ export default function Header() {
             <Link className="li" to="/saturn">saturn</Link>
             <Link className="li" to="/uranus">uranus</Link>
             <Link className="li" to="/neptune">neptune</Link>
+        </div>
+
+        <div className="mobile-menu">
+
         </div>
         </nav>
     );

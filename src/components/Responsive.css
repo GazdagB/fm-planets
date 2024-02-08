@@ -131,6 +131,24 @@
     }
 }
 
+/* ============= MOBILE RESPONSIVITY ================== */
 @media only screen and (max-width: 650px){
+    .menu{
+        display: none;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
     
 }
