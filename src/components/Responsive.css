@@ -120,3 +120,17 @@
         height: fit-content;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .li{
+        font-size: 11px;
+    }
+
+    .menu{
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    
+}
