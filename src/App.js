@@ -14,14 +14,14 @@ function App() {
       <Router>
         <Header mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} />
         <Routes>
-          <Route path="/" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={0}/>} />
-          <Route path="/venus" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={1}/>}></Route>
-          <Route path="/earth" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={2}/>} />
-          <Route path="/mars" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={3}/>} />
-          <Route path="/jupiter" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={4}/>} />
-          <Route path="/saturn" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={5}/>} />
-          <Route path="/uranus" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={6}/>} />
-          <Route path="/neptune" element={<PlanetPage mobileIsOpen={mobileIsOpen} planetNumber={7}/>} />
+          <Route path="/" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={0}/>} />
+          <Route path="/venus" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={1}/>}></Route>
+          <Route path="/earth" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={2}/>} />
+          <Route path="/mars" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={3}/>} />
+          <Route path="/jupiter" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={4}/>} />
+          <Route path="/saturn" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={5}/>} />
+          <Route path="/uranus" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={6}/>} />
+          <Route path="/neptune" element={<PlanetPage mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} planetNumber={7}/>} />
         </Routes>
       </Router>
     </div>
