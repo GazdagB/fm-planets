@@ -19,11 +19,124 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
   let planet = data[planetNumber];
   return (
     <>
+        <CSSTransition
+        in={mobileIsOpen}
+        timeout={300}
+        classNames="mobile-menu"
+        unmountOnExit
+        mountOnEnter
+        >
+
+        
+        <div className="mobile-menu">
+          <div className="link-row">
+            <div className="planet-link-container">
+              <div className="dot dot-1"></div>
+              <Link
+                onClick={() => {
+                  setMobileIsOpen(false);
+                }}
+                className="li"
+                to="/"
+              >
+                mercury
+              </Link>
+            </div>
+            <img src={arrowRight} alt="" />
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/venus"
+            >
+              venus
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/earth"
+            >
+              earth
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/mars"
+            >
+              mars
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/jupiter"
+            >
+              jupiter
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/saturn"
+            >
+              saturn
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/uranus"
+            >
+              uranus
+            </Link>
+          </div>
+          <div className="link-row">
+          <div className="dot dot-1"></div>
+            <Link
+              onClick={() => {
+                setMobileIsOpen(false);
+              }}
+              className="li"
+              to="/neptune"
+            >
+              neptune
+            </Link>
+          </div>
+        </div>
+        </CSSTransition>
+
         <CSSTransition  
         in={!mobileIsOpen}
-        timeout={300}
+        timeout={600}
         classNames="page-container"
         unmountOnExit
+        mountOnEnter
         >
         <main className="mercury page-container wrapper">
           <div className="mobile-buttons">
@@ -147,107 +260,6 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
             <DataCard title="average temp." data={planet.temperature} />
           </div>
         </main>
-        </CSSTransition>
-    
-
-       <CSSTransition
-        in={mobileIsOpen}
-        timeout={300}
-        classNames="mobile-menu"
-        unmountOnExit
-        >
-        <div className="mobile-menu">
-          <div className="link-row">
-            <div className="dot dot-1"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/"
-            >
-              mercury
-            </Link>
-            <img src={arrowRight} alt="" />
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/venus"
-            >
-              venus
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/earth"
-            >
-              earth
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/mars"
-            >
-              mars
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/jupiter"
-            >
-              jupiter
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/saturn"
-            >
-              saturn
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/uranus"
-            >
-              uranus
-            </Link>
-          </div>
-          <div className="link-row">
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/neptune"
-            >
-              neptune
-            </Link>
-          </div>
-        </div>
         </CSSTransition>
     </>
   );
