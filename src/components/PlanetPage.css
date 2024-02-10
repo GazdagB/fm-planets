@@ -96,6 +96,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px;
+}
+
+.link-row:not(:last-child){
+    border-bottom: 1px solid #979797;
 }
 
 
@@ -105,9 +110,45 @@
 }
 
 .dot-1{
-    background-color: #FFD700;
+    background-color: #DEF4FC;
     border-radius: 50%;
 }
+
+.dot-2{
+    background-color: #F7CC7F;
+    border-radius: 50%;
+}
+
+.dot-3{
+    background-color: #545BFE;
+    border-radius: 50%;
+}
+
+.dot-4{
+    background-color: #FF6A45;
+    border-radius: 50%;
+}
+
+.dot-5{
+    background-color: #ECAD7A;
+    border-radius: 50%;
+}
+
+.dot-6{
+    background-color: #FCCB6B;
+    border-radius: 50%;
+}
+
+.dot-7{
+    background-color: #65F0D5;
+    border-radius: 50%;
+}
+
+.dot-8{
+    background-color: #497EFA;
+    border-radius: 50%;
+}
+
 
 .mobile-menu-enter{
     opacity: 0;

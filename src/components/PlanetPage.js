@@ -45,7 +45,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
             <img src={arrowRight} alt="" />
           </div>
           <div className="link-row">
-          <div className="dot dot-1"></div>
+          <div className="dot dot-2"></div>
             <Link
               onClick={() => {
                 setMobileIsOpen(false);
@@ -57,7 +57,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
             </Link>
           </div>
           <div className="link-row">
-          <div className="dot dot-1"></div>
+          <div className="dot dot-3"></div>
             <Link
               onClick={() => {
                 setMobileIsOpen(false);
@@ -69,7 +69,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
             </Link>
           </div>
           <div className="link-row">
-          <div className="dot dot-1"></div>
+          <div className="dot dot-4"></div>
             <Link
               onClick={() => {
                 setMobileIsOpen(false);
@@ -81,7 +81,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
             </Link>
           </div>
           <div className="link-row">
-          <div className="dot dot-1"></div>
+          <div className="dot dot-5"></div>
             <Link
               onClick={() => {
                 setMobileIsOpen(false);
