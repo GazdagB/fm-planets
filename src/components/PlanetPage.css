@@ -85,3 +85,31 @@ img{
     flex-direction: column;
     gap: 10px;
 }
+
+
+.link-row{
+    height: 65px;
+}
+
+.dot{
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.dot-1{
+    background-color: #FFD700;
+    border-radius: 50%;
+}
+
+
+.mobile-menu-enter{
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+
+.monile-menu-exit{
+    transform: translateY(-100%);
+}
+
+
+
