@@ -9,14 +9,17 @@ import { CSSTransition } from "react-transition-group";
 
 import arrowRight from "../assets/arrow-right.svg";
 
-const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
+const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlanet}) => {
   useEffect(() => {
     setActive("OVERVIEW");
+    
   }, [planetNumber]);
 
+  setCurrentPlanet(planetNumber);
   const [active, setActive] = useState("OVERVIEW");
-
+  
   let planet = data[planetNumber];
+
   return (
     <>
         <CSSTransition
@@ -26,108 +29,145 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen }) => {
         unmountOnExit
         mountOnEnter
         >
-
-        
         <div className="mobile-menu">
-          <div className="link-row">
-            <div className="planet-link-container">
-              <div className="dot dot-1"></div>
-              <Link
-                onClick={() => {
-                  setMobileIsOpen(false);
-                }}
-                className="li"
-                to="/"
-              >
-                mercury
-              </Link>
-            </div>
-            <img src={arrowRight} alt="" />
-          </div>
-          <div className="link-row">
+
+        {/* LINK 1 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
+          <div className="dot dot-1"></div>
+          <p>MERCURY</p>
+        </div>
+        <img src={arrowRight} alt="" />
+       
+        </Link>
+
+        {/* LINK 2 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
           <div className="dot dot-2"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/venus"
-            >
-              venus
-            </Link>
-          </div>
-          <div className="link-row">
+          <p>VENUS</p>
+        </div>
+        <img src={arrowRight} alt="" />
+       
+        </Link>
+
+        {/* LINK 3 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+   
+        <div className="planet-link-container">
           <div className="dot dot-3"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/earth"
-            >
-              earth
-            </Link>
-          </div>
-          <div className="link-row">
+          <p>EARTH</p>
+        </div>
+        <img src={arrowRight} alt="" />
+       
+        </Link>
+
+        {/* LINK 4 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
           <div className="dot dot-4"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/mars"
-            >
-              mars
-            </Link>
-          </div>
-          <div className="link-row">
+          <p>MARS</p>
+        </div>
+        <img src={arrowRight} alt="" />
+       
+        </Link>
+
+        {/* LINK 5 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
           <div className="dot dot-5"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/jupiter"
-            >
-              jupiter
-            </Link>
-          </div>
-          <div className="link-row">
-          <div className="dot dot-1"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/saturn"
-            >
-              saturn
-            </Link>
-          </div>
-          <div className="link-row">
-          <div className="dot dot-1"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/uranus"
-            >
-              uranus
-            </Link>
-          </div>
-          <div className="link-row">
-          <div className="dot dot-1"></div>
-            <Link
-              onClick={() => {
-                setMobileIsOpen(false);
-              }}
-              className="li"
-              to="/neptune"
-            >
-              neptune
-            </Link>
-          </div>
+          <p>JUPITER</p>
+        </div>
+        <img src={arrowRight} alt="" />
+        
+        </Link>
+
+        {/* LINK 6 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
+          <div className="dot dot-6"></div>
+          <p>SATURN</p>
+        </div>
+        <img src={arrowRight} alt="" />
+        
+        </Link>
+
+        {/* LINK 7 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
+          <div className="dot dot-7"></div>
+          <p>URANUS</p>
+        </div>
+        <img src={arrowRight} alt="" />
+        
+        </Link>
+
+        {/* LINK 8 */}
+        <Link 
+        className="li link-row"
+        onClick={() => {
+          setMobileIsOpen(false);
+        }}
+        to={"/"}
+        >
+        
+        <div className="planet-link-container">
+          <div className="dot dot-8"></div>
+          <p>NEPTUNE</p>
+        </div>
+        <img src={arrowRight} alt="" />
+        
+        </Link>
+
+
         </div>
         </CSSTransition>
 

@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
+import data from "../data.json";
 
 
 
 
-export default function Header({setMobileIsOpen,mobileIsOpen}) {
+export default function Header({setMobileIsOpen,mobileIsOpen,currentPlanet}) {
 
     function handleMobileToggle(){
         setMobileIsOpen((prev)=>!prev);
         console.log(mobileIsOpen);
         
     }
+
+
+
 
     return (
         <nav className="navbar flex">
@@ -22,14 +26,12 @@ export default function Header({setMobileIsOpen,mobileIsOpen}) {
             <div className="line"></div>
         </div>
         <div className="menu">
-            <Link className="li" to="/">mercury</Link>
-            <Link className="li" to="/venus">venus</Link>
-            <Link className="li" to="/earth">earth</Link>
-            <Link className="li" to="/mars">mars</Link>
-            <Link className="li" to="/jupiter">jupiter</Link>
-            <Link className="li" to="/saturn">saturn</Link>
-            <Link className="li" to="/uranus">uranus</Link>
-            <Link className="li" to="/neptune">neptune</Link>
+            {data.map((item, index) => {
+                return <Link key={index} style={{'--active-color': currentPlanet === index ? data[index].color : undefined}} className={currentPlanet === index ? `menu-link-active li` : "li"} to={`/${item.name}`}>{item.name}</Link>
+                
+            })
+            }
+
         </div>
 
          
