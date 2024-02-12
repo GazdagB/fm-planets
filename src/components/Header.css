@@ -61,7 +61,37 @@
 .menu-link-active::before{
 background-color: var(--active-color);
 height: 2px;
+animation-name: fadeInLeft;
+animation-duration: 0.5s;
 }
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    
+}
+
+.menu .li{
+    opacity: 0.75;
+}
+
+.menu .li:hover{
+    opacity: 1;
+}
+
+.menu-link-active{
+    opacity: 1 !important;
+}
+
+
 
 .menu .li:before{
 content: "";
