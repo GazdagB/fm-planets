@@ -81,10 +81,12 @@ animation-duration: 0.5s;
 
 .menu .li{
     opacity: 0.75;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu .li:hover{
     opacity: 1;
+    transform: translateY(-2px);
 }
 
 .menu-link-active{
