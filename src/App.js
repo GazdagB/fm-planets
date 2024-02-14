@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Header from "./components/Header";
 import PlanetPage from "./components/PlanetPage";
 import React, { useState } from "react";
@@ -14,6 +14,7 @@ function App() {
       <Router>
         <Header mobileIsOpen={mobileIsOpen} setMobileIsOpen={setMobileIsOpen} currentPlanet={currentPlanet} />
         <Routes>
+          <Route path="/" element={<Navigate to="/mercury" replace />} />
           <Route
             path="/mercury"
             element={
