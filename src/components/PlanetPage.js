@@ -37,7 +37,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/mercury"}
         >
         
         <div className="planet-link-container">
@@ -54,7 +54,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/venus"}
         >
         
         <div className="planet-link-container">
@@ -71,7 +71,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/earth"}
         >
    
         <div className="planet-link-container">
@@ -88,7 +88,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/mars"}
         >
         
         <div className="planet-link-container">
@@ -105,7 +105,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/jupiter"}
         >
         
         <div className="planet-link-container">
@@ -122,7 +122,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/saturn"}
         >
         
         <div className="planet-link-container">
@@ -139,7 +139,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/uranus"}
         >
         
         <div className="planet-link-container">
@@ -156,7 +156,7 @@ const PlanetPage = ({ planetNumber, mobileIsOpen, setMobileIsOpen,setCurrentPlan
         onClick={() => {
           setMobileIsOpen(false);
         }}
-        to={"/"}
+        to={"/neptune"}
         >
         
         <div className="planet-link-container">
